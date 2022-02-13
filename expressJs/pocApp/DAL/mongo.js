@@ -11,8 +11,8 @@ mongoose.connect(`${url + '/' + database}`);
 async function getData() {
     const Password = mongoose.model('passwords', passwordSchema);
     let data = new Password({
-        username: 'nageshajaba@gmail.com',
-        password: 'gmail 4'
+        username: 'test@gmail.com',
+        password: 'testp'
     });
     const result = await data.save();
     console.log(result);
