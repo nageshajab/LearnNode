@@ -12,7 +12,7 @@ async function getData() {
     const Password = mongoose.model('passwords', passwordSchema);
     let data = new Password({
         username: 'nageshajaba@gmail.com',
-        password: 'nagesh gmail 4'
+        password: 'gmail 4'
     });
     const result = await data.save();
     console.log(result);
